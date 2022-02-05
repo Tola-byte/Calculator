@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="innermost">
+            <div class="inner">
+                <div class="otherText">
+                <label for="bill"><strong>Bill:</strong></label> <br>
+                <input type="number" class="bill"> 
+                <br>
+                <br>
+                <br>
+            
+                <label for="TiP"><strong>Select tip(%) : </strong></label>
+                <br>
+                <div class="button">
+                <input type="button" class="ok" value = "5">
+                <input type="button" class="ok"  value = "10">
+                <input type="button" class="ok" value = "15">
+                <br>
+                <input type = "button"  class="ok" value = "25">
+                <input type="button"  class="ok" value = "50">
+                <input type ="button" class="oklo" value = "C">
+            </div>
+            <br>
+            <br>
+            <br>
+            <label for="people"><strong>Number of People : </strong> </label>
+            <br>
+            <input type="number" class="people" >
+            </div>
+            </div>
+          <div class="calculator">
+              <div class="content">
+                  
+                <div class="tipAmountContainer">
+                    <div class="tipAmount">
+                        <h2>Tip Amount</h2>
+                        <p>/person</p>
+                    </div>
+                    <h1 class="display"></h1>
+                </div>
+                <br>
+                <br>
+                <br>
+                <div class="personContainer">
+                    <div class="tipAmount">
+                        <h2>Total</h2>
+                        <p>/person</p>
+                    </div>
+                    <h1 class="tflex"></h1>
+                </div>
+              </div>
+                <div class="resetBtnContainer">
+                    <button class="resetbtn"><strong>CALCULATE</strong></button>
+                    </div>
+                    <br>
+
+                    <div class="resetBtnsCon"
+                    <button type="submit" id="myBtn"><strong>RESET</strong></button>
+                </div>
+          </div>
+          </div>    
+    </div>
+</body>
+<script src="./script.js"></script>
+</html>

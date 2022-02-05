@@ -1,0 +1,220 @@
+*{
+    box-sizing: border-box;
+    margin:0;
+}
+
+.container{
+    background-color: hsl(185, 41%, 84%);
+    font-family: 'Space Mono', monospace;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-size:  72.5%;
+}
+.innermost{
+    background-color: white;
+    width: 60%;
+    border-radius: 8px;
+    padding: 2rem;
+    display: flex;
+    flex-direction: row;
+    /* justify-content: space-between; */
+    margin-top: -10%;
+    
+}
+ .inner{
+    background-color: white;
+    width: 60%;
+    border-radius: 8px;
+    padding: 1.2rem;
+    /* border: 1px solid black; */
+    margin-left: 0.7rem;
+} 
+.calculator{
+    background:  hsl(183, 100%, 15%);
+    border-radius: 3%;
+     width: 40%; 
+    padding: 1.2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /* align-items: center; */
+}
+
+.resetBtnContainer{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   background : hsl(172, 67%, 45%);
+   border-radius: 12px;
+}
+.resetBtnsCon{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   background : hsl(172, 67%, 45%);
+   border-radius: 5px;
+   height: 18%;
+   cursor: pointer;
+}
+.resetBtnsCon :hover{
+     color: whitesmoke;
+}
+.resetbtn , .resetbtns{
+    width: 100%;
+    padding: 0.8rem;
+    outline: none;
+    border: none;
+    background-color: hsl(185, 41%, 84%);
+    border-radius: 5px;
+   cursor: pointer;
+    font-family: 'Space Mono', monospace;
+    background-color : hsl(172, 67%, 45%);
+    
+}
+.resetbtn:hover{
+    color: whitesmoke;
+}
+
+
+
+content{
+    display: flex;
+    flex-direction: row;
+    margin-top: 4%;
+}
+.otherText{
+ width: 50%;
+ justify-content: space-between;
+}
+.ok{
+    background-color: hsl(183, 100%, 15%);
+    color: white;
+    border: none;
+    outline: none; 
+    width: 25%;
+    cursor: pointer;
+    font-family: 'Space Mono', monospace;
+    font-weight: 600;
+    height: 25px;
+    gap: 5vw;
+}
+.bill{
+    width : 300px;
+    height: 30px;
+}
+.people{
+    width: 300px;
+    height: 30px;
+}
+.button :hover{
+    background-color: hsl(172, 67%, 45%);
+}
+.button{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: 5vw;
+    gap : 5%;
+    font-family: 'Space Mono', monospace;
+    width: 300px;
+}
+/* .oklo{
+    background-color: whitesmoke;
+    color: black;
+    border: none;
+    outline: none;
+    height: 50%;
+    font-weight: 600;
+    width: 25%;
+    cursor: pointer;
+    font-family: 'Space Mono', monospace;
+    margin-left: -5%;
+} */
+.tipAmountContainer {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.personContainer{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+input{
+    width: 100%;
+    background-color: whitesmoke;
+    border: none;
+    outline: none;
+    height: 12%;
+}
+h1{
+    color : hsl(172, 67%, 45%);
+}
+h2{
+    color: hsl(0, 0%, 100%);
+    font-size: small;
+}
+p{
+    color : hsl(0, 0%, 100%);
+    font-size: xx-small;
+    font-weight: 100;
+}
+.h1{
+    color : hsl(172, 67%, 45%);  
+}
+  .oklo{
+    background-color: whitesmoke;
+    color: black;
+    border: none;
+    outline: none; 
+    width: 25%;
+    cursor: pointer;
+    font-family: 'Space Mono', monospace;
+    font-weight: 600;
+    height: 25px;
+    gap: 5px;
+}
+
+@media(max-width: 768px) {
+    .innermost {
+        flex-direction: column;
+    }
+
+    .inner {
+        margin-left: -0.7rem;
+    }
+
+    .calculator {
+        width: 100%;
+        justify-content: space-between;
+    }
+    .button{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 170px;
+    }
+    .ok{
+    background-color: hsl(183, 100%, 15%);
+    color: white;
+    border: none;
+    outline: none; 
+    width: 25%;
+    cursor: pointer;
+    font-family: 'Space Mono', monospace;
+    font-weight: 600;
+    height: 25px;
+    gap: 5px;
+}
+.bill{
+    width : 140px;
+    height: 30px;
+}
+.people{
+    width: 140px;
+    height: 30px;
+}
+}
